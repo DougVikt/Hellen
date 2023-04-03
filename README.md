@@ -3,17 +3,17 @@
 
 # FUNÇÕES 
   + Faz contas simples 
-    > soma 
-    > subtração
-    > divisão
-    > multiplicação
+    > soma <br>
+    > subtração<br>
+    > divisão<br>
+    > multiplicação<br>
   + Calcula a area 
-    > quadrados
-    > retangulos
+    > quadrados<br>
+    > retangulos<br>
   + Porcentagem 
   + Conversões 
-    > de peso 
-    > distancia 
-    > volume de liquidos 
+    > de peso <br>
+    > distancia <br>
+    > volume de liquidos <br>
   
   
