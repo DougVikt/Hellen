@@ -127,12 +127,20 @@ def conversao(conver):
     elif tipo_conversao== 3 or conver==4:
       robor('que legal ! líquidos ! diga-me só o numero ! ')
       valor=int(input('>>'))
-      robor('muito bom ! digite o tipo da conversão . sabendo que ! m , 3 é mretro cúbico . l , prara litro . m , l para mililitros  ')
+      robor('muito bom ! digite o tipo da conversão . sabendo que ! m , 3 é metro cúbico . l , prara litro . m , l para mililitros  ')
       tipo=input('>>')
       if tipo== ('m3'):
         litro=valor*1000
-        mililitro=valor*(10**5)
-        robor('{} metros cúbicos ! ou ! {} litros ! ou ! {} mililitros ! são a mesma coisa ! fazer novamente ? é 1 ')
+        mililitro=valor*(10**6)
+        robor('{} metros cúbicos ! ou ! {} litros ! ou ! {} mililitros ! são a mesma coisa ! fazer novamente ? é 1 '.format(valor, litro , mililitro))
+      elif tipo== ('l'):
+        metro3 = valor/1000
+        mililitro = valor*1000
+        robor('{} metros cúbicos ! ou ! {} litros ! ou ! {} mililitros ! são a mesma coisa ! fazer novamente ? é 1 '.format(metro3, valor , mililitro))
+      elif tipo== ('ml'):
+        metro3 = valor/(10**6)
+        litro = valor/1000
+        robor('{} metros cúbicos ! ou ! {} litros ! ou ! {} mililitros ! são a mesma coisa ! fazer novamente ? é 1 '.format(metro3, litro , valor))    
     elif tipo_conversao==0:
       conver=0  
 
